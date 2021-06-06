@@ -1,0 +1,121 @@
+:root {
+  --color-events: rgb(5, 5, 93);
+}
+
+.events-contanier {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  min-height: 67vh;
+  padding: 40px;
+  background-color: var(--color-events);
+}
+
+.events-contanier h2 {
+  font-size: 45px;
+  flex-grow: 0;
+  color: rgb(241, 210, 69);
+  font-family: monospace;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+
+.card-contanier {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1250px;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-grow: 10;
+  background-color: inherit;
+  padding: 30px 10px 30px 10px;
+}
+
+.event-card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  min-height: 300px;
+  height: fit-content;
+  width: 400px;
+  margin-top: 30px;
+  background-color: rgba(49, 52, 235, 0.993);
+  border-color: var(--color-events);
+  border-style: solid;
+  border-radius: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.top {
+  align-self: flex-start;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-items: center;
+  height: 100px;
+}
+
+.top i {
+  font-size: 50px;
+  color: rgb(241, 210, 69);
+  margin-left: 20px;
+}
+
+.title {
+  margin-left: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  color: white;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 10px 0px 0px 0px;
+}
+
+.title p#name {
+  font-size: 24px;
+  font-weight: 1000;
+  align-self: flex-start;
+  margin: 0px;
+  color: rgb(241, 210, 69);
+}
+.title p#track {
+  font-size: 18px;
+  font-weight: lighter;
+  align-self: flex-start;
+}
+.event-card p#desp {
+  font-size: 18px;
+  text-align: left;
+  padding: 10px;
+  font-weight: 100;
+}
+
+.event-card button {
+  width: 80%;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+  color: blue;
+  margin-bottom: 15px;
+  height: 40px;
+  font-weight: 300;
+}
+
+.bottom {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: white;
+  flex-grow: 1;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  padding: 20px 0px 10px 10px;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+}

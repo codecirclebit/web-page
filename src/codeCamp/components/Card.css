@@ -1,0 +1,82 @@
+.Field {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 300px;
+}
+
+.line-contanier {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin: 10px;
+  height: 100%;
+  width: 30px;
+}
+
+.dot {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  top: 2px;
+  background-color: black;
+  border-radius: 0%;
+  display: inline-block;
+}
+
+.inner-dot {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 5px;
+  left: 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.vertical-line {
+  position: absolute;
+  width: 8px;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 26px;
+}
+
+.Card {
+  width: 300px;
+  height: 250px;
+  border-radius: 3px;
+  border: 3px solid black;
+  margin: 12px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(56, 59, 84);
+  color: rgb(237, 240, 240);
+}
+
+.Card #Season {
+  height: 30px;
+  font-weight: 600;
+  color: inherit;
+}
+
+.Card button {
+  background-color: gold;
+  color: black;
+  width: 80%;
+  height: 35px;
+  border: 0px solid black;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.Card button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}

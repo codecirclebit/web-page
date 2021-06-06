@@ -1,0 +1,22 @@
+.Rules-contanier {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 20px;
+}
+
+.Rules-contanier h1 {
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.List {
+  margin: 1px;
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+  list-style-type: square;
+}
+
+li {
+  padding-bottom: 12px;
+}

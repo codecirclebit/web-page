@@ -1,0 +1,14 @@
+.TimeLine-contanier {
+  flex-grow: 1;
+}
+
+.TimeLine-name {
+  font-size: 40px;
+}
+
+.TimeLine {
+  display: fleax;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+}

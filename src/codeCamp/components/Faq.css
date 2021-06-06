@@ -1,0 +1,38 @@
+.Faq-contanier h2 {
+  font-size: 40px;
+  text-align: center;
+}
+.Faq {
+  background-color: inherit;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.Faq #outer {
+  width: 700px;
+  height: fit-content;
+  background-color: white;
+  margin: 15px;
+  border: solid;
+  border-width: 3px 10px 20px 3px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.Faq h3 {
+  font-size: 30px;
+}
+
+.Faq p {
+  font-size: 22px;
+}
+
+.Faq span#bold {
+  font-size: 22px;
+  font-weight: 1000;
+}
