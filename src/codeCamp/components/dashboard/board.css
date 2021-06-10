@@ -45,11 +45,25 @@
   border-radius: 50%;
   top: 0;
   left: 10px;
+  width: 300px;
+  height: 300px;
 }
 
 .Level {
   position: absolute;
-  top: 15px;
-  right: 30px;
+  top: 5px;
+  left: 305px;
+  font-size: 40px;
+}
+.Stars #tag {
+  position: absolute;
+  top: 70px;
+  left: 305px;
+  font-size: 40px;
+}
+.Stars #value {
+  position: absolute;
+  top: 125px;
+  left: 305px;
   font-size: 40px;
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import './style.css'
+import './Footer.css'
+
 const codeCircle = {
   mail: 'mailto:codecircle@bitsathy.ac.in',
   linkedIn: 'https://www.linkedin.com/company/codecirclebit/',

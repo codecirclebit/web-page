@@ -7,7 +7,7 @@ interface NabBarProps {
   navColor: string
 }
 
-interface NabBarState extends NabBarProps {}
+type NabBarState = NabBarProps
 
 export default class NabBar extends React.Component<NabBarProps, NabBarState> {
   state = { ...this.props }

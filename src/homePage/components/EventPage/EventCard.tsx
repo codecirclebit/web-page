@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './Events.css'
 
-interface EventCardProps extends IEvent {}
-interface EventCardState extends IEvent {}
+type EventCardProps = IEvent
+type EventCardState = IEvent
 
 export default class EventCard extends Component<
   EventCardProps,

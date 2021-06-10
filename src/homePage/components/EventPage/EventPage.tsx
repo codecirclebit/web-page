@@ -22,7 +22,7 @@ export default class Event extends PureComponent<{}, EventState> {
   }
 
   formateData(data: EventsApi[]) {
-    let eventList: IEvent[] = []
+    const eventList: IEvent[] = []
     data.map((event: EventsApi) => {
       const eventVal: IEvent = {
         name: event.name,

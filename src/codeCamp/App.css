@@ -58,7 +58,7 @@
 }
 
 .Topic {
-  width: 470px;
+  max-width: 470px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;

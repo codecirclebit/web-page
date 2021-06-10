@@ -1,8 +1,9 @@
 import './board.css'
 import React, { useState } from 'react'
 const url = 'https://userpic.codeforces.org/1748596/title/3f393af3e58d5d14.jpg'
-const level = 1
-const stars = 5
+const user404 = 'https://userpic.codeforces.org/no-title.jpg'
+const level = '0'
+const stars = 0
 const starIcon = '🌟'
 
 function Board() {
@@ -27,11 +28,14 @@ function Board() {
           </button>
         </div>
         <div className="Profile">
-          <img src={url} />
-          <div className="Level">
-            <h3> Level: {level} </h3>
-            {starIcon.repeat(stars)}
-          </div>
+          <img src={user404} alt="usernotfound" />
+          <span className="Level">
+            <p> LEVEL {level} </p>
+          </span>
+          <span className="Stars">
+            <p id="tag"> STARS {stars ? '' : '-'}</p>
+            <p id="value"> {stars ? starIcon.repeat(stars) : ''}</p>
+          </span>
         </div>
       </div>
     </div>

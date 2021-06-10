@@ -7,23 +7,16 @@ export default class Rules extends Component {
       <div className="Rules-contanier">
         <h1>Eligibility</h1>
         <ul className="List">
-          <li> Register for currnet season</li>
+          <li> Register for current season</li>
           <li> A Programming Language </li>
           <li> CodeForces Profile </li>
-          <li> Offcourse Your Time and Intrest </li>
+          <li> Of course Your Time and Interest </li>
         </ul>
 
         <h1>Rules</h1>
         <ul className="List">
-          <li> Compelete Daily Targets</li>
-          <li> Streak fall to 0 on failing </li>
-        </ul>
-
-        <h1> Daily Targets </h1>
-        <ul className="List">
-          <li>{' Level 0 -> Solve atleast 3 Problems'} </li>
-          <li>{' Level 1 -> Solve atleast 4 Problems'} </li>
-          <li>{' Level 2 -> Solve atleast 5 Problems'} </li>
+          <li> Compelete Daily Targets </li>
+          <li> Stars fall to 0 on failing Targets </li>
         </ul>
       </div>
     )

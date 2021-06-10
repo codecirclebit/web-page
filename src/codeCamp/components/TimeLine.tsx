@@ -5,17 +5,12 @@ import UpComingCard from './UpCommingCard'
 
 const CardList: ICard[] = [
   {
-    season: 'MAY 2021',
+    season: 'JUNE 2021',
     status: 'open',
-    RegForm: 'https://google.com',
+    RegForm: 'https://forms.gle/UJirarkPXg3UVwXh7',
   },
   {
-    season: 'JULY 2021',
-    status: 'upcoming',
-    RegForm: 'https://google.com',
-  },
-  {
-    season: 'SET 2021',
+    season: 'AUG 2021',
     status: 'upcoming',
     RegForm: 'https://google.com',
   },

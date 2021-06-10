@@ -26,7 +26,7 @@ function Faq() {
         </div>
 
         <div id="outer">
-          <h3> What are my Daily Task? </h3>
+          <h3> What are my Daily Targets? </h3>
           <p>
             {' '}
             On <span id="bold">level 0</span> solve minimum of{' '}
