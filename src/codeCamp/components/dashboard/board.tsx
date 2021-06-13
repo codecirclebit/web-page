@@ -1,15 +1,29 @@
 import './board.css'
 import React, { useState } from 'react'
-const url = 'https://userpic.codeforces.org/1748596/title/3f393af3e58d5d14.jpg'
+import axios from 'axios'
+
 const user404 = 'https://userpic.codeforces.org/no-title.jpg'
-const level = '0'
-const stars = 0
 const starIcon = '🌟'
 
-function Board() {
+const Board: React.FC = () => {
   const [handle, setHandle] = useState<string>('')
-  const getScore = (handle: string) => {
-    console.log(handle)
+  const [avatar, setAvatar] = useState<string>(user404)
+  const [level, setLevel] = useState<number>(0)
+  const [stars, setStars] = useState<number>(0)
+  const getScore = async (handle: string) => {
+    let url = process.env.CC_ENDPOINT + handle
+    const body = await axios.get(url)
+    if (body.data.handle == '404') {
+      setAvatar(user404)
+      setLevel(0)
+      setStars(0)
+      return
+    }
+    url = process.env.CF_ENDPOINT + handle
+    const profile = await axios.get(url)
+    setAvatar(profile.data.result[0].titlePhoto)
+    setLevel(parseInt(body.data.level))
+    setStars(parseInt(body.data.stars))
   }
   return (
     <div className="Board-contanier">
@@ -28,7 +42,7 @@ function Board() {
           </button>
         </div>
         <div className="Profile">
-          <img src={user404} alt="usernotfound" />
+          <img src={avatar} alt="usernotfound" />
           <span className="Level">
             <p> LEVEL {level} </p>
           </span>
