@@ -10,8 +10,11 @@ module.exports = {
   },
   plugins: [
     new ReactRefreshWebpackPlugin(),
-    new webpack.DefinePlugin({
-      'process.env.mode': JSON.stringify('dev'),
+    new webpack.EnvironmentPlugin({
+      NODE_ENV: 'development',
+      CF_ENDPOINT: 'https://codeforces.com/api/user.info?handles=',
+      CC_ENDPOINT:
+        'https://webhooks.mongodb-realm.com/api/client/v2.0/app/db-jiqkf/service/code-camp/incoming_webhook/code-camp-get?handle=',
     }),
   ],
 }
